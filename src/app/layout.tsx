@@ -3,7 +3,7 @@ import clsx from "clsx";
 import 'tailwindcss/index.css'
 import '@/styles/globals.css';
 import { HeroUIProvider } from "@heroui/react";
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
 import Header from "@/components/ui/Header";
 import local from "next/font/local";
 
@@ -41,9 +41,9 @@ export default function RootLayout({
         className="transition ease-in-out min-h-screen"
       >
         <HeroUIProvider>
-          <SessionProvider>
+          {/* <SessionProvider> */}
             <Header/>
-          </SessionProvider>
+          {/* </SessionProvider> */}
         </HeroUIProvider>
       </body>
     </html>
